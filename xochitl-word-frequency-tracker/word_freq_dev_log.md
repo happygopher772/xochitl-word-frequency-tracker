@@ -29,3 +29,11 @@
 	I hate this, I hate this so much, I got it wokring... more like my good pal chatgpt got it up and running, not perfectly, but we got enough to keep
 	the app going, I need to learn more about how txt gets encoded, are all libraries really going to be like this, a lot of documenatation behind MeCab
 	might be in japanese, i have no clue, for now, the app lives on, we move forward. 
+
+12/12/10
+	
+	Basically done with the logic side of the app, just have to organize and connect it all. Once I get a terminal ui and testing done, 
+	i'll go back to QT and create a proper ui. 
+
+	Working on this instead of studying for finals... I did so bad in classes this semester. 
+	I'll make up for it by coding a lot during this winter break. 
