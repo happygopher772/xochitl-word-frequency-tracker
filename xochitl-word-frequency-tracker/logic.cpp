@@ -9,14 +9,61 @@
 #include <algorithm>
 #include <iomanip>
 #include <ctime>
-
+#include <filesystem>
+namespace fs = filesystem;
 //freq 
 #include <unordered_map>
 using namespace std;
 
-int Gallbladder()
+int userFileSelection()
 {
-    return 0;
+    string path = ".";
+    int fileRemote = 1;
+    if (fs::is_empty(path))
+    {
+        fileRemote = 0;
+        cout << "stop playing with me right now... file folder is empty" << endl;
+        return -1;
+    }
+
+    int i = 1;
+    vector<string> folderReadVec;
+    for (const auto& entry : fs::directory_iterator("YOUR_PATH_HERE")) 
+    {
+        cout << i << ". " << entry.path().string() << endl;
+        folderReadVec.push_back(entry.path().string());
+        i++;
+    }
+
+    int userSelectedFile = -1;
+    string actualSelectedFile;
+
+    while (true) {
+        cout << "Pick a file number: ";
+        cin >> userSelectedFile;
+
+        if (cin.fail() || userSelectedFile < 1 || userSelectedFile > (int)folderReadVec.size()) 
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "You're breaking my balls here, type a valid number.\n";
+            continue;
+        }
+
+        actualSelectedFile = folderReadVec[userSelectedFile - 1];
+        break;
+    }
+
+    cout << "You picked: " << actualSelectedFile << endl;
+
+     
+
+
+
+    
+
+
+
 }
 
 //uses MeCab to format JapTxtFile

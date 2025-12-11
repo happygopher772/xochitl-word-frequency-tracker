@@ -9,9 +9,15 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="Header Files\Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Resource Files\unformated-txt">
+      <UniqueIdentifier>{f9127014-869a-48c3-b55e-a72884e6b31f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource Files\formated.txt">
+      <UniqueIdentifier>{000b9a18-9a2f-4aec-9c56-28ec23ea3c9e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -32,7 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="file-logs">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files\Resource Files</Filter>
     </Text>
   </ItemGroup>
 </Project>
